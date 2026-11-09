@@ -20,15 +20,16 @@ Construire un modèle de classification binaire qui prédit si un client va quit
 
 **Telco Customer Churn** (IBM Sample Data, disponible sur Kaggle).
 
-- Fichier : `data/raw/telco_customer_churn.csv` (≈ 955 Ko, CSV séparé par des virgules, ligne d'en-tête)
+- Fichier : `data/raw/telco_customer_churn.csv` (977 501 octets, CSV séparé par des virgules, ligne d'en-tête)
 - **7 043 clients × 21 colonnes** (1 identifiant, 19 variables explicatives, 1 cible), vérifié avec pandas
 - Un client par ligne, `customerID` unique
 - **1 869 clients churnés (26,54 %)** contre 5 174 restés (73,46 %) → classes **déséquilibrées**
 - Empreinte SHA-256 du fichier brut : `88be4b93fbe0cc83421af1c503794c97c342eca914c1576db7c276e61d61358a` (permet de vérifier que tout le monde travaille sur le même fichier : `shasum -a 256 data/raw/telco_customer_churn.csv`)
 
-URL source : _à compléter_
-Licence : _à compléter_
-Date de mise à jour (page Kaggle) : _à compléter_
+- **URL source** : <https://www.kaggle.com/datasets/blastchar/telco-customer-churn>
+- **Licence** : « Data files © Original Authors » (indiquée par Kaggle ; jeu d'exemple publié à l'origine par IBM). Ce n'est pas une licence libre : usage pédagogique dans le cadre du projet, sans redistribution publique des données. Le dépôt est privé.
+- **Date de mise à jour (Kaggle)** : 23 février 2018
+- **Taille déclarée par Kaggle** : 977 501 octets, identique à notre fichier
 
 ![Répartition de la variable cible Churn](../reports/figures/churn_repartition.png)
 
@@ -84,7 +85,7 @@ Date de mise à jour (page Kaggle) : _à compléter_
 ## 7. Checklist de livraison
 
 - [x] Dataset téléchargé dans `data/raw/`
-- [ ] Source, licence et date notées dans ce document
+- [x] Source, licence et date notées dans ce document
 - [x] Dimensions et types vérifiés avec pandas (`shape`, `dtypes`)
 - [x] Notebook `01_comprehension_donnees.ipynb` exécutable de haut en bas
 - [ ] Présentation du problème prête pour l'oral
