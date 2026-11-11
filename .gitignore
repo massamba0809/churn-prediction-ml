@@ -11,9 +11,6 @@ venv/
 # Données volumineuses et modèles lourds (garder data/raw si le fichier est petit)
 data/processed/*
 !data/processed/.gitkeep
-models/*.pkl
-models/*.joblib
-!models/.gitkeep
 
 # OS / IDE
 .DS_Store
