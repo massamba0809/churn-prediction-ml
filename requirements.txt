@@ -1,8 +1,9 @@
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-imbalanced-learn
-joblib
-jupyter
+# Versions fixées : un fichier .joblib ne se recharge qu'avec la même version de scikit-learn
+numpy==2.5.4
+pandas==3.1.1
+matplotlib==3.11.2
+seaborn==0.13.2
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+joblib==1.6.0
+jupyter==1.1.1
